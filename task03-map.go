@@ -10,11 +10,7 @@ func sortMapValues(input map[int]string) (result []string) {
 		keys[i] = key
 		i++
 	}
-	//	fmt.Print(keys)
-	sort.Slice(keys, func(a, b int) bool {
-		return a > b
-	})
-	//	fmt.Print(keys)
+	sort.Ints(keys)
 	for i := 0; i < len(input); i++ {
 		result[i] = input[keys[i]]
 	}

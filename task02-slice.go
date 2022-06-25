@@ -7,5 +7,4 @@ func reverse(input []int64) (result []int64) {
 		result[len(input)-1-i] = val
 	}
 	return
-	return
 }
